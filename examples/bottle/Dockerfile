@@ -4,8 +4,8 @@ MAINTAINER Jeethu Rao <jeethu@jeethurao.com>
 ADD uwsgi.conf /home/app/uwsgi.conf
 ADD supervisord.conf /etc/supervisor/conf.d/app.conf
 
-ADD flask/app.py /home/app/app.py
-ADD flask/requirements.txt /tmp/
+ADD bottle/app.py /home/app/app.py
+ADD bottle/requirements.txt /tmp/
 
 RUN set -e; \
     useradd -u 1000 -m -d /home/app -s /bin/bash app; \
@@ -14,3 +14,4 @@ RUN set -e; \
     rm /tmp/requirements.txt
 
 EXPOSE 80
+

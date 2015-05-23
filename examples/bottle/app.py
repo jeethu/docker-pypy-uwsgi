@@ -1,6 +1,6 @@
-from flask import Flask
+from bottle import Bottle
 
-application = Flask(__name__)
+application = Bottle()
 
 @application.route('/')
 def index():

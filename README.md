@@ -38,3 +38,13 @@ Otherwise:
 ```
 curl -X GET -I http://localhost/
 ```
+
+
+The bottle demo app
+---
+
+Exactly the same as the flask demo app, except that you run it thusly.
+
+```
+docker run -it --rm -p 80:80 jeethu/pypy-uwsgi:2.5.1-bottle-demo
+```

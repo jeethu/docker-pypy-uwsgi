@@ -15,7 +15,4 @@ RUN set -e; \
     apt-get clean; \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ONBUILD COPY requirements.txt /tmp/
-ONBUILD RUN pip install -r /tmp/requirements.txt
-
 CMD ["/usr/bin/supervisord"]
