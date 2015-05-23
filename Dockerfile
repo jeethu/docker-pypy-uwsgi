@@ -10,10 +10,10 @@ RUN set -e; \
     cp /tmp/pypy-2.5.1-linux64/bin/libpypy-c.so /usr/lib/x86_64-linux-gnu/; \
     ldconfig; \
     pip install uwsgi==2.0.10 uwsgitop==0.8; \
-    rm -rf /tmp/pypy*; \
     apt-get purge -yq wget; \
     apt-get -yq autoremove; \
-    apt-get autoclean
+    apt-get clean; \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ONBUILD COPY requirements.txt /tmp/
 ONBUILD RUN pip install -r /tmp/requirements.txt

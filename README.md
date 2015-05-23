@@ -23,18 +23,18 @@ The example was stolen from the [quickstart page](http://uwsgi-docs.readthedocs.
 
 Run with:
 ```
-docker run -it --rm -p 8080:8080 jeethu/pypy-uwsgi:2.5.1-flask-demo
+docker run -it --rm -p 80:80 jeethu/pypy-uwsgi:2.5.1-flask-demo
 ```
 
 #### To test
 If you're using boot2docker
 
 ```
-curl -X GET -I "http://$(boot2docker ip):8080/"
+curl -X GET -I "http://$(boot2docker ip)/"
 ```
 
 Otherwise:
 
 ```
-curl -X GET -I http://localhost:8080/
+curl -X GET -I http://localhost/
 ```
