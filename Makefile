@@ -1,4 +1,4 @@
-PYPY_VERSION = 2.5.1
+PYPY_VERSION = 2.6.0
 
 all: pypy_uwsgi flask_example bottle_example
 
