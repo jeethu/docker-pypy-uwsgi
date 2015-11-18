@@ -1,4 +1,4 @@
-A Docker image for uWSGI 2.0.10 with PyPy 4.0.0
+A Docker image for uWSGI 2.0.11.2 with PyPy 4.0.0
 ===============================================
 
 A minimal Ubuntu 14.04 based docker image with PyPy 4.0.0, libpypy-c.so, uWSGI 2.0.11.2 and Supervisord.
