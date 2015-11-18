@@ -1,12 +1,12 @@
-A Docker image for uWSGI 2.0.10 with PyPy 2.6.0
+A Docker image for uWSGI 2.0.10 with PyPy 4.0.0
 ===============================================
 
-A minimal Ubuntu 14.04 based docker image with PyPy 2.6.0, libpypy-c.so, uWSGI 2.0.10 and Supervisord.
+A minimal Ubuntu 14.04 based docker image with PyPy 4.0.0, libpypy-c.so, uWSGI 2.0.11.2 and Supervisord.
 
 Setup:
 ---
 
-To build an Ubuntu 14.04 based image:
+To build an Ubuntu 14.04.3 based image:
 ```
 make pypy_uwsgi
 ```
@@ -28,14 +28,14 @@ The example was stolen from the [quickstart page](http://uwsgi-docs.readthedocs.
 
 Run with:
 ```
-docker run -it --rm -p 80:80 jeethu/pypy-uwsgi:2.6.0-flask-demo
+docker run -it --rm -p 80:80 jeethu/pypy-uwsgi:4.0.0-flask-demo
 ```
 
 #### To test
-If you're using boot2docker
+If you're using docker-machine
 
 ```
-curl -X GET -I "http://$(boot2docker ip)/"
+curl -X GET -I "http://$(docker-machine ip default)/"
 ```
 
 Otherwise:
@@ -48,8 +48,8 @@ curl -X GET -I http://localhost/
 The bottle demo app
 ---
 
-Exactly the same as the flask demo app, except that you run it thusly.
+The same as the flask demo app, except that you run it thusly.
 
 ```
-docker run -it --rm -p 80:80 jeethu/pypy-uwsgi:2.6.0-bottle-demo
+docker run -it --rm -p 80:80 jeethu/pypy-uwsgi:4.0.0-bottle-demo
 ```
