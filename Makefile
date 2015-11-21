@@ -1,4 +1,4 @@
-PYPY_VERSION = 4.0.0
+PYPY_VERSION = 4.0.1
 
 all: pypy_uwsgi flask_example bottle_example
 

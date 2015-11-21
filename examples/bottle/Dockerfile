@@ -1,4 +1,4 @@
-FROM jeethu/pypy-uwsgi:4.0.0
+FROM jeethu/pypy-uwsgi:4.0.1
 MAINTAINER Jeethu Rao <jeethu@jeethurao.com>
 
 ADD uwsgi.conf /home/app/uwsgi.conf
