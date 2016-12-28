@@ -1,6 +1,6 @@
 A Docker image for uWSGI 2.0.11.2 with PyPy 4.0.1
 =================================================
-[![](https://badge.imagelayers.io/jeethu/pypy-uwsgi:latest.svg)](https://imagelayers.io/?images=jeethu/pypy-uwsgi:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/jeethu/pypy-uwsgi.svg)](https://microbadger.com/images/jeethu/pypy-uwsgi "Get your own image badge on microbadger.com")
 
 A minimal Ubuntu 14.04 based docker image with PyPy 4.0.1, libpypy-c.so, uWSGI 2.0.11.2 and Supervisord.
 
